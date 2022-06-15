@@ -8,6 +8,13 @@ It takes my Android tablet approximately 3.5 hours to download and build it.
 
 Hope this prebuilt binary is useful for someone else.
 
+## Bugs when running inside termux
+
+It seems that Bionic and android ndk is incompatible with cling.
+Trying to include some cpp headers like `iostream` will give you a lot of errors.
+I can't fix this.
+
+
 ## Download
 - UserLAnd: https://github.com/kxxt/prebuilt-cling-for-android/releases/tag/initial
 - termux: https://github.com/kxxt/prebuilt-cling-for-android/releases/tag/termux
